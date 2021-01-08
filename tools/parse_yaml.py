@@ -2,7 +2,6 @@
 # -*- coding:utf-8 -*-
 import os
 import yaml
-from conf.profile_env import profile
 
 base_dir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 DATABASE_PATH = base_dir + '/conf/'
@@ -11,16 +10,19 @@ DATABASE_PATH = base_dir + '/conf/'
 class ParseYaml(object):
     _service = dict()
     path = DATABASE_PATH + "config.yaml"
+    profile = "test"
 
+    # 获取一个单例对象
     @classmethod
-    def instance(cls):
+    def instance(self, profile):
         """Method  instance
         :return: cls
         """
-        instance = cls._service.get(cls.__name__, None)
+        instance = self._service.get(self.__name__, None)
         if not instance:
-            instance = cls.__new__(cls)
-            cls._service.setdefault(cls.__name__, instance)
+            instance = self.__new__(self)
+            self._service.setdefault(self.__name__, instance)
+        self.profile = profile
         return instance
 
     def parse(self, section="write_postgres"):
@@ -31,9 +33,9 @@ class ParseYaml(object):
         """
         # profile 标识开发环境还是测试环境
         try:
-            if profile == 'dev':
+            if self.profile == 'dev':
                 _profile = "dev"
-            elif profile == 'test':
+            elif self.profile == 'test':
                 _profile = 'test'
             else:
                 _profile = "prod"
@@ -60,5 +62,5 @@ class ParseYaml(object):
 
 
 if __name__ == '__main__':
-    parse_yaml = ParseYaml().instance()
-    print(parse_yaml.app_parse())
+    parse_yaml = ParseYaml().instance("prod")
+    print(parse_yaml.parse())

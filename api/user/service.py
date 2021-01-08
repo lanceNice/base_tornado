@@ -92,8 +92,7 @@ class UserService(BaseService):
             page_num = kwargs.get("page_num", current_page)
             offset = kwargs.get("offset", max_per_page)
 
-            args = ("id", "company_name", "company_socialcreditcode", "name", "note", "app_id", "app_key",
-                    "yzg_address", 'yzg_city_name')
+            args = ("id", "phone")
             kwargs = {
                 "phone": phone,
                 "order_by": {

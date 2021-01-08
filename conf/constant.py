@@ -4,7 +4,12 @@
 from tools.list_transfer_num import list_of_multi
 from tools.parse_yaml import ParseYaml
 
-parse_yaml = ParseYaml().instance()
+import os
+
+# 判断是开发环境,测试环境,正式环境，分别用 dev, test, prod来表示，默认就是测试环境
+profile = os.getenv("profile", "test")
+
+parse_yaml = ParseYaml().instance(profile)
 
 # ################ yaml 配置 ###################
 

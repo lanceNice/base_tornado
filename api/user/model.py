@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 from bcrypt import hashpw, gensalt
-from peewee import CharField, IntegerField, BooleanField, BlobField
+from peewee import CharField, IntegerField, BlobField
 
 from api.base.model import BaseModel
 from conf.constant import prefix_db
@@ -47,11 +47,11 @@ class User(BaseModel):
     type = IntegerField(verbose_name="用户类型")  # 1:管理员　2:普通用户
     app_id = CharField(null=True, max_length=40, index=True, verbose_name="应用id")
     app_key = CharField(null=True, max_length=40, index=True, verbose_name="应用key")
-    yzg_address = CharField(null=True, verbose_name="云住工地址")
-    yzg_user = CharField(null=True, verbose_name="云住工账号")
-    yzg_password = CharField(null=True, verbose_name="云住工账号密码")
-    yzg_city_name = CharField(null=True, verbose_name="云住工城市名字")
-    yzg_city_db = CharField(null=True, verbose_name="云住工城市库名")
+    yzg_address = CharField(null=True, verbose_name="第三方地址")
+    yzg_user = CharField(null=True, verbose_name="第三方账号")
+    yzg_password = CharField(null=True, verbose_name="第三方账号密码")
+    yzg_city_name = CharField(null=True, verbose_name="第三方城市名字")
+    yzg_city_db = CharField(null=True, verbose_name="第三方城市库名")
 
     class Meta:
         table_name = prefix_db + "user"
