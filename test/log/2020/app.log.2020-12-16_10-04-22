@@ -1,0 +1,5 @@
+2020-12-16 10:04:22,866 - F:/lance/pythons/pythonspace/base_tornado/test/logger[line:47] - DEBUG: debug
+2020-12-16 10:04:22,868 - F:/lance/pythons/pythonspace/base_tornado/test/logger[line:48] - INFO: info
+2020-12-16 10:04:22,868 - F:/lance/pythons/pythonspace/base_tornado/test/logger[line:49] - WARNING: 警告
+2020-12-16 10:04:22,868 - F:/lance/pythons/pythonspace/base_tornado/test/logger[line:50] - ERROR: 报错
+2020-12-16 10:04:22,868 - F:/lance/pythons/pythonspace/base_tornado/test/logger[line:51] - CRITICAL: 严重

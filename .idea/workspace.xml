@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1d88c6f9-6f8e-4b03-84a6-398728b14c70" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/base_tornado.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/middle_service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/yzg_openapi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/base/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/base/handler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/base/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/base/service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/exception.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/user/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/user/handler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/user/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/user/service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/user/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/user/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/celery.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/catalog.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/constant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/logging.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/profile_env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databases/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databases/mysql.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databases/mysql_transaction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databases/redis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/apidoc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/header.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/interface_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/record.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/base-tornado-errors.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/base-tornado-infos.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scheduler_task.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/celery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/clear_img_task.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/push_task.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/elasticsearch_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/learn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/log/2020/app.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/log/2020/app.log.2020-12-16_10-01-52" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/log/2020/app.log.2020-12-16_10-03-27" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/log/2020/app.log.2020-12-16_10-04-22" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/log/2020/error.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/log/2020/error.log.2020-12-16_10-01-52" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/log/2020/error.log.2020-12-16_10-03-27" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/log/2020/error.log.2020-12-16_10-04-22" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/log/md_service_yooticloud.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/log/record.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/logger" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/my_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/table_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/app_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/auth_token.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/base_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/date_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/file_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/filepath_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/generate_str.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/id_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/json_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/list_transfer_num.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/log/md_service_yooticloud.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/page_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/parse_yaml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/rabbitmq.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/redis_helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/sms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/tracer.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="F:\lance\pythons\pythonspace\base_tornado\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tasks" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\lance\pythons\pythonspace\base_tornado\tasks" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="base_tornado" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d88c6f9-6f8e-4b03-84a6-398728b14c70" name="Default Changelist" comment="" />
+      <created>1610075022298</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610075022298</updated>
+      <workItem from="1610075023561" duration="4310000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="641" y="314" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610075223479">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="641" y="314" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1610075223479" />
+    <state width="1877" height="337" key="GridCell.Tab.0.bottom" timestamp="1610082610373">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1610082610373" />
+    <state width="1877" height="337" key="GridCell.Tab.0.center" timestamp="1610082610372">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1610082610372" />
+    <state width="1877" height="337" key="GridCell.Tab.0.left" timestamp="1610082610369">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1610082610368" />
+    <state width="1877" height="337" key="GridCell.Tab.0.right" timestamp="1610082610373">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1610082610373" />
+    <state x="463" y="165" key="SettingsEditor" timestamp="1610082593503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="165" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1610082593503" />
+    <state x="647" y="275" width="626" height="490" key="find.popup" timestamp="1610082544596">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="647" y="275" width="626" height="490" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1610082544596" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/base_tornado$server.coverage" NAME="server Coverage Results" MODIFIED="1610082610217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

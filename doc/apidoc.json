@@ -1,0 +1,15 @@
+{
+  "name": "云住工开放平台接口文档",
+  "version": "1.0.0",
+  "description": "云住工开放平台管理平台 api",
+  "title": "yzg_openapi",
+  "url" : "http://192.168.0.134:8010",
+  "header": {
+    "title": "接口说明",
+    "filename": "header.md"
+  },
+  "template": {
+      "withCompare": true,
+      "withGenerator": true
+  }
+}
