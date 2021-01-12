@@ -1,6 +1,8 @@
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
-
+# -*- coding: utf-8 -*-
+# @Time    : 2021/1/12 17:26
+# @Author  : lance
+# @File    : data_tools.py
+# @Software: PyCharm
 from functools import reduce
 
 
@@ -12,7 +14,3 @@ def list_of_multi(str_data) -> int:
     else:
         result = str_data
     return result
-
-
-if __name__ == '__main__':
-    print(list_of_multi(60))

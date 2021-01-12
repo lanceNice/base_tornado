@@ -18,3 +18,7 @@ def get_app_info():
         app_id += 'x' * add
     app_key = hashlib.md5(app_id.encode('utf-8')).hexdigest().upper()
     return app_id, app_key
+
+
+if __name__ == '__main__':
+    print(get_app_info())
