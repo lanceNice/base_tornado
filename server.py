@@ -39,7 +39,6 @@ def make_app(_loop):
 
 def main():
     try:
-
         logger.info("server start: http://{}:{}".format(address, port))
         loop = asyncio.get_event_loop()
         app = make_app(loop)
