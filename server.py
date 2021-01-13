@@ -51,7 +51,6 @@ def main():
         elif platform.system() == 'Linux':
             server.start(9)  # Forks multiple sub-processe  2n+1
             logger.info("server system:{}".format("Linux"))
-
         # 开启定时器
         if profile == "prod" or profile == "dev":
             scheduler.start()
