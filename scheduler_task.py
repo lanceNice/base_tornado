@@ -5,7 +5,7 @@ from apscheduler.schedulers.tornado import TornadoScheduler
 scheduler = TornadoScheduler(timezone="Asia/Shanghai")
 
 
-# 设置为每日凌晨00:01:00时执行一次调度程序
+# 设置为每日凌晨00:01:01时执行一次调度程序
 @scheduler.scheduled_job("cron", day_of_week='*', hour='1', minute='1', second='0')
 def rebate():
     pass
