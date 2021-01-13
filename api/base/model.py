@@ -3,7 +3,7 @@
 
 from datetime import datetime
 from peewee import Model, PrimaryKeyField, BooleanField, DateTimeField
-from databases import WriteMysqlPool
+from db import WriteMysqlPool
 
 
 # Model 基类

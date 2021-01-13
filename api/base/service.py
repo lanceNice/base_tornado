@@ -5,7 +5,7 @@ from peewee import Model
 from playhouse.shortcuts import model_to_dict
 
 import api.base
-from databases import RedisPool, ReadMysqlPool, WriteMysqlPool
+from db import RedisPool, ReadMysqlPool, WriteMysqlPool
 from tools.base import get_dict_args
 from tools.logger import logger
 from peewee_async import execute

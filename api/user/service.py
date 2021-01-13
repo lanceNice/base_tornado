@@ -4,7 +4,7 @@
 from api.base.service import BaseService
 from api.user.model import User
 from conf import page, max_per_page, current_page
-from databases.mysql_transaction import Transaction
+from db.mysql_transaction import Transaction
 from tools.logger import logger
 from tools.response import Code
 
