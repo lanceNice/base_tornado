@@ -18,8 +18,8 @@ tasks_name='tasks'
 process_num=2
 
 case $1 in
-   start) celery multi start -B -A  $tasks_name worker -l info --logfile=$logfile --pidfile=$pidfile  -c $process_num -n middle_service.%h;;
-   restart) celery multi restart -B -A  $tasks_name worker -l info --logfile=$logfile --pidfile=$pidfile  -c $process_num -n middle_service.%h;;
+   start) celery multi start -B -A  $tasks_name worker -l info --logfile=$logfile --pidfile=$pidfile  -c $process_num -n base_tornado.%h;;
+   restart) celery multi restart -B -A  $tasks_name worker -l info --logfile=$logfile --pidfile=$pidfile  -c $process_num -n base_tornado.%h;;
    stop) celery multi stop -B -A  $tasks_name worker --pidfile=$pidfile;;
    *) echo "require start|stop|restart" ;;
 esac
