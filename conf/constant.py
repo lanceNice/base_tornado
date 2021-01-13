@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-from tools.data_tools import list_of_multi
+from tools.data import list_of_multi
 from tools.parse_yaml import ParseYaml
 
 import os

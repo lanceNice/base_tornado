@@ -15,11 +15,6 @@ scheduler = scheduler_task.scheduler
 
 
 def make_app(_loop):
-    """
-
-    :param _loop:
-    :return:
-    """
     if profile != "prod":
         debug = True
     else:

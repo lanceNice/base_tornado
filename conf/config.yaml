@@ -19,6 +19,70 @@ app:
     template_id: 000
     valid_time: 5
 
+prod:
+  # redis 基本信息配置
+  redis:
+    host: 10.10.2.8
+    password:
+    port: 6379
+    max_connections: 300 # 连接池最大连接数
+    db: 0 # 默认数据库
+
+  # mq配置信息
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    user: admin
+    password: admin
+    vhost: base_tornado
+
+  write_mysql:
+    host: 127.0.0.1
+    user: admin
+    password: admin
+    port: 3306
+    max_connections: 1000 # 连接池最大连接数
+    min_connections: 1
+    db: base_tornado
+
+  read_mysql:
+    host: 127.0.0.1
+    user: admin
+    password: admin
+    port: 3306
+    max_connections: 1000
+    min_connections: 1
+    db: base_tornado
+
+
+  # 图片路径配置
+  pic_path:
+    path: /opt/img
+
+  # 主机ip
+  site_url:
+    url: "https://api.yooticloud.cn"
+
+  # app配置信息
+  app:
+    address: 0.0.0.0
+    port: 8010
+
+  # session 配置
+  session:
+    secret_key: 'd#aPr8%mssTZgVGy'
+    jwt_expire: 7 * 24 * 3600
+
+  # 分页配置
+  page:
+    max_per_page: 10
+    current_page: 1
+
+  # 日志配置
+  log:
+    log_path: /opt/logs
+    log_level: ERROR
+
 dev:
   # redis 基本信息配置
   redis:
@@ -81,70 +145,6 @@ dev:
   log:
     log_path: /opt/logs
     log_level: DEBUG
-
-prod:
-  # redis 基本信息配置
-  redis:
-    host: 10.10.2.8
-    password:
-    port: 6379
-    max_connections: 300
-    db: 0
-
-  # mq配置信息
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    user: admin
-    password: admin
-    vhost: base_tornado
-
-  write_mysql:
-    host: 127.0.0.1
-    user: admin
-    password: admin
-    port: 3306
-    max_connections: 1000
-    min_connections: 1
-    db: base_tornado
-
-  read_mysql:
-    host: 127.0.0.1
-    user: admin
-    password: admin
-    port: 3306
-    max_connections: 1000
-    min_connections: 1
-    db: base_tornado
-
-
-  # 图片路径配置
-  pic_path:
-    path: /opt/img
-
-  # 主机ip
-  site_url:
-    url: "https://api.yooticloud.cn"
-
-  # app配置信息
-  app:
-    address: 0.0.0.0
-    port: 8010
-
-  # session 配置
-  session:
-    secret_key: 'd#aPr8%mssTZgVGy'
-    jwt_expire: 7 * 24 * 3600
-
-  # 分页配置
-  page:
-    max_per_page: 10
-    current_page: 1
-
-  # 日志配置
-  log:
-    log_path: /opt/logs
-    log_level: ERROR
 
 test:
   # redis 基本信息配置
