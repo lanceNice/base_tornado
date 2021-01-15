@@ -16,9 +16,7 @@ class UserHandlerApi(BaseHandler, ABC):
         """
         用户新增
         """
-        kwargs = {
-            "phone": self.get_json_argument("phone", default="")
-        }
+        kwargs = self.get_request_dict(["phone"])
         res, code = await UserService.instance().user_create(**kwargs)
         if code == Code.SUCCEED:
             self.response(data=res)

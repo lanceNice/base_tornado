@@ -42,6 +42,13 @@ class BaseHandler(RequestHandler, ABC):
         else:
             raise MissingArgumentError(name)
 
+    # 获取请求数据字典
+    def get_request_dict(self, key_list):
+        res_dict = {}
+        for key in key_list:
+            res_dict.update({key: self.get_json_argument(key, "")})
+        return res_dict
+
     def write_error(self, status_code: int, **kwargs: Any):
         try:
             if status_code == Code.Msg.get("URL_NOT_FOUND"):
@@ -63,27 +70,6 @@ class BaseHandler(RequestHandler, ABC):
             error_msg = str(e)
         result = res(code=status_code, msg=error_msg)
         return self.finish(result)
-
-    def json_success(self, code=200, data=None, message='成功'):
-        if data is None:
-            data = {}
-        self.write(json.dumps({'code': code, 'data': data, 'message': message}, ensure_ascii=False))
-        self.finish()
-
-    def json_fail(self, code=501, data=None, message='失败'):
-        if data is None:
-            data = {}
-        self.write(json.dumps({'code': code, 'data': data, 'message': message}))
-        self.finish()
-
-    def json_error(self, code=500, data=None, message='错误'):
-        if data is None:
-            data = {}
-        result = {'code': code, 'data': data, 'message': message}
-        if code:
-            result['code'] = code
-        self.write(json.dumps({'code': code, 'data': data, 'message': message}))
-        self.finish()
 
     def response(self, code=Code.SUCCEED, msg=None, data=None):
         """统一返回消息"""

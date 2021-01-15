@@ -7,7 +7,6 @@ from tools.logger import logger
 from tools.response import Code
 
 
-# 使用该装饰器 数据库要设置为显式事务
 class Transaction(object):
     @staticmethod
     def transaction(func):
