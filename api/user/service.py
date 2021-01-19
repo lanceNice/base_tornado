@@ -104,8 +104,8 @@ class UserService(BaseService):
                 "status": 1
             }
 
-            result = await self.like_query(*args, **kwargs)
-            count = await self.list_count(**kwargs)
+            result = await self.enhance_find(*args, **kwargs)
+            count = await self.enhance_find_count(**kwargs)
             res = {
                 "result": result,
                 "count": count

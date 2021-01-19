@@ -19,7 +19,7 @@ app = Celery('tasks', backend=redis_url, broker=rabbit_url, include=tasks)
 beat_schedule = {
     "celery_clear_img": {
         "task": "tasks.clear_img_task.clear_file",  # 执行的函数
-        "schedule": crontab(minute="*/{}".format(MINUTES)),  # every minute 每分钟执行
+        "schedule": crontab(minute="*/{}".format(MINUTES)),  # every minute 每6分钟执行
         "args": ()  # # 任务函数参数
     }
 }
