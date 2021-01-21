@@ -6,9 +6,8 @@ import json
 from functools import wraps
 
 from api.exception import ApiHTTPError
-from api.user.service import UserService
 from tools import Code
-from tools.auth_token import decode_auth_token, encode_auth_token
+from tools.auth_token import decode_auth_token
 from tools.logger import logger
 
 
@@ -26,7 +25,7 @@ def set_dict(data) -> Row:
     return Row(itertools.zip_longest(data.keys(), data.values()))
 
 
-# 异步装饰器
+# token检验装饰器
 def authenticated_async():
     def decorator(func):
         @wraps(func)
@@ -70,9 +69,9 @@ def authenticated_async():
     return decorator
 
 
+# 记录数据库审计日志装饰器
 def log(content):
     """
-    记录数据库审计日志
     :param content: 操作内容
     :return:
     """
@@ -95,11 +94,8 @@ def log(content):
     return logger_
 
 
+# 记录每个http请求装饰器
 def record_http_request(func):
-    """
-    @function 用于记录每个http请求
-    """
-
     @wraps(func)
     def record(self, *args, **kwargs):
         request_time = str(datetime.now())

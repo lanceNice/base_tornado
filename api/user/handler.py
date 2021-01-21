@@ -45,7 +45,7 @@ class UserHandlerApi(BaseHandler, ABC):
     # @authenticated_async()
     async def delete(self, user_id):
         """
-        用户修改
+        用户删除
         :return:
         """
 
