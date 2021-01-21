@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/3/3 16:42
-# @Author  : lance
-# @File    : app_utils.py
-# @Software: PyChar
 # app相关工具类
 import hashlib
 import time

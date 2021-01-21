@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2019/12/24 16:18
-# @Author  : lance
-# @File    : file_utils.py
-# @Software: PyCharm
 # 文件路径工具
 import os
 
@@ -16,3 +12,7 @@ def get_conf_file_path(filename):
     base_dir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
     database_path = base_dir + '/conf/'
     return database_path + filename
+
+
+if __name__ == '__main__':
+    print(get_conf_file_path("city.json"))
