@@ -281,6 +281,7 @@ class BaseService(object):
     async def async_execute_update(self, sql):
         cursor = await self.write_mysql_con.cursor_async()
         result = await cursor.execute(sql)
+        await cursor.release()
         return result
 
     @staticmethod
